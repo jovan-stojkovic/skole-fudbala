@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;500&display=swap");
+
+// headlines: font-family: 'Protest Strike', sans-serif;
+// rest: font-family: 'Nunito', sans-serif;
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+  font-weight: 300;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  height: 120px;
+  width: 100%;
+  background-color: rgba(144, 159, 145, 0.443);
+  backdrop-filter: blur(2px);
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+
+  .navbar-container {
+    max-width: 1400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    height: 100%;
+
+    .logo {
+      background-image: url("https://www.iconbolt.com/iconsets/hawcons-stroke/soccer-court.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100px;
+      width: 100px;
+    }
+
+    .navlinks {
+      ul {
+        display: flex;
+        gap: 50px;
+        li {
+          all: unset;
+          transition: 0.2s;
+
+          &:hover {
+            cursor: pointer;
+            transform: scale(1.3);
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+}
